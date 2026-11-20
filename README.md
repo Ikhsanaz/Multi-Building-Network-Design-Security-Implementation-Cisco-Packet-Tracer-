@@ -11,26 +11,7 @@ A hierarchical 3-building LAN architecture designed, configured, and validated i
 
 ---
 
-## 2. Repository Structure
-
-```text
-campus-network-ospf-security/
-├── README.md
-├── topologies/
-│   ├── campus_network_combined_vlan.pkt   # Primary implemented topology (shared access switches)
-│   ├── campus_network_dedicated_vlan.pkt  # Alternative topology (1 VLAN per access switch)
-│   └── topology_diagram.png               # High-resolution topology diagram
-├── configs/
-│   ├── routers_backbone.cfg               # Router-A, Router-B, Router-C (OSPF Area 0 & MD5 Auth)
-│   ├── mls_core_switches.cfg              # CORE-A, CORE-B, CORE-C (SVIs, OSPF ABR, & Extended ACL 100)
-│   └── access_switches_security.cfg       # Catalyst 2960 (802.1Q Trunks, DHCP Snooping, & Port Security)
-└── docs/
-    └── verification_and_testing.md        # CLI verification outputs & PoC test matrix
-```
-
----
-
-## 3. IPv4 Addressing & VLAN Allocation Plan
+## 2. IPv4 Addressing & VLAN Allocation Plan
 
 Subnetting was engineered using **VLSM** based on per-floor device counts plus **~30% expansion headroom**:
 
@@ -59,7 +40,7 @@ Subnetting was engineered using **VLSM** based on per-floor device counts plus *
 
 ---
 
-## 4. Routing & Infrastructure Services
+## 3. Routing & Infrastructure Services
 
 * **Multi-Area OSPF Hierarchy:**
   * **Backbone (`Area 0`):** Interconnects `Router-A`, `Router-B`, `Router-C`, and the routed uplinks of `CORE-A`, `CORE-B`, and `CORE-C`.
@@ -72,7 +53,7 @@ Subnetting was engineered using **VLSM** based on per-floor device counts plus *
 
 ---
 
-## 5. Network Security Hardening (My Primary Contribution)
+## 4. Network Security Hardening (My Primary Contribution)
 
 To protect administrative infrastructure and mitigate Layer 2/Layer 3 internal threats, three defensive layers were implemented:
 
@@ -87,7 +68,7 @@ To protect administrative infrastructure and mitigate Layer 2/Layer 3 internal t
 
 ---
 
-## 6. Verification & Proof-of-Concept (PoC) Summary
+## 5. Verification & Proof-of-Concept (PoC) Summary
 
 | Test Case | Verification Command / Method | Result |
 | :--- | :--- | :---: |
@@ -100,7 +81,7 @@ To protect administrative infrastructure and mitigate Layer 2/Layer 3 internal t
 
 ---
 
-## 7. Team & Credits
+## 6. Team & Credits
 
 * **Ikhsan Aydin Zahid** — *Network Security* (Extended ACLs, DHCP Snooping, Port Security)
 * **Muhammad Ramadhan** — *Routing & Network Design* (Topology, IP Addressing, Multi-Area OSPF)
