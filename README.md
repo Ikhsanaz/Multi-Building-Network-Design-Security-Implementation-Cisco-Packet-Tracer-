@@ -1,6 +1,6 @@
 # Multi-Building-Network-Design-Security-Implementation-Cisco-Packet-Tracer-
 
-A hierarchical 3-building (10-floor) enterprise/campus LAN architecture designed, configured, and validated in **Cisco Packet Tracer**. The implementation integrates **VLAN segmentation**, **Multi-Area OSPF routing** with MD5 authentication and ABR route summarization, centralized **DHCP Relay services**, and **Layer 2/3 security hardening** (Extended ACLs, DHCP Snooping, and Port Security).
+A hierarchical 3-building LAN architecture designed, configured, and validated in **Cisco Packet Tracer**. The implementation integrates **VLAN segmentation**, **Multi-Area OSPF routing** with MD5 authentication and ABR route summarization, centralized **DHCP Relay services**, and **Layer 2/3 security hardening** (Extended ACLs, DHCP Snooping, and Port Security).
 ---
 
 ## 1. Project Overview & Requirements
