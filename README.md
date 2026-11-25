@@ -80,10 +80,3 @@ To protect administrative infrastructure and mitigate Layer 2/Layer 3 internal t
 | Rogue DHCP & MAC Spoofing Mitigation | `show ip dhcp snooping` & `show port-security interface fa0/2` | **Pass** (Trusted uplink & `Restrict` active) |
 
 ---
-
-## 6. Team & Credits
-
-* **Ikhsan Aydin Zahid** — *Network Security* (Extended ACLs, DHCP Snooping, Port Security)
-* **Muhammad Ramadhan** — *Routing & Network Design* (Topology, IP Addressing, Multi-Area OSPF)
-* **Henry Ersinalsal Ginting** — *VLAN & Switching* (VLANs, 802.1Q Trunking, Switch Segmentation)
-* **Rifki Ramadhan** — *Infrastructure & Services* (DHCP Server, SVI Gateways, Service Integration)
